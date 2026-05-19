@@ -1,0 +1,41 @@
+{
+  "viewport": {
+    "width": 1440,
+    "height": 1080
+  },
+  "initialWaitMs": 1200,
+  "steps": [
+    {
+      "fill": {
+        "selector": "#sourceHost",
+        "value": "legacy-vps.example.com"
+      },
+      "waitMs": 500
+    },
+    {
+      "fill": {
+        "selector": "#targetHost",
+        "value": "new-8c16g.example.com"
+      },
+      "waitMs": 500
+    },
+    {
+      "click": {
+        "selector": "[data-phase='inventory']"
+      },
+      "waitMs": 500
+    },
+    {
+      "click": {
+        "selector": "#hasSnapshot"
+      },
+      "waitMs": 500
+    },
+    {
+      "click": {
+        "selector": "#languageBtn"
+      },
+      "waitMs": 700
+    }
+  ]
+}
